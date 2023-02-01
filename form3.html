@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport"content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"content="ie=edge">
+    <title>Formularios3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+    <body  style="background-color:#ffffff;">
+
+        <h3>Formularios</h3>
+        <!--Formularios-->
+        
+        <section>
+
+            <form action="pagina.php" method="post"> 
+                <p>
+                    Nom
+                    <input type="text" name="nom" id="nom">
+                </p>
+                <p>
+                    Cognoms
+                    <input type="text" name="cognoms" id="cognoms">
+                </p>
+                
+                <p>Password <input type="password" name="pass" id="pass"></p>
+                <input type="hidden" name="ocult" id="ocult" value="123">
+            
+                <p>
+                    Edat
+                    <input type="number" name="edat" id="edat" step="any" min="18" max="40">
+                </p>
+
+                <p>
+                    element a buscar
+                    <input type="search" name="buscar" id="search">
+                    
+                </p>
+            <p>
+                Teléfon
+                <input type="telf" name="num_telf" id="num_telf">
+            </p>
+            
+            <p>Web
+                <input type="url" name="web" id="web" placeholder="https://www.google.es">
+            </p>
+            
+            <p>Email
+                <input type="text" name="email" id="email" placeholder="TU@correo.es">
+            </p>
+            <p>
+            Data naixament
+            <input type="date" name="fecha" id="fecha">
+             </p>
+                <p>
+                    <input type="submit" value="Click">
+                    <input type="reset" value="reset">
+                    <input type="button" value="boto">
+                </p>
+                <p>
+                    quin vehicle tens
+                    moto <input type="checkbox" name="moto" value="moto">moto
+                    bici <input type="checkbox" name="bici" value="bici">bici
+                    coche <input type="checkbox" name="coche" value="coche">coche
+                </p>
+                <p>
+                    color favorit
+                    ninguno color <input type="radio" name="color" valor="ninguno" named>
+                    rojo <input type="radio" name="color1">
+                    blanco <input type="radio" name="color2">
+                    negro <input type="radio" name="color3">
+                </p>
+
+                <p>selecionar
+                    <input type="range" name="nivel" min="1" max="10" step="1">
+                </p>
+                <p>Nota:<span id="nota"></span></p>
+                <script>
+                    var slider = document.getElementById( "rango")
+                    var output = document.getElementById( "nota")
+                    output.innerHTML = slider.value;
+
+                    slider.oninput = function () {
+                        output.innerHTML = this.value;
+                    }
+                </script>
+                
+                <textarea id="observaciones" name="observaciones" rows="4" cols="50">
+                Texto dentro del area   
+                </textarea>
+                Suscriptores
+                <input type="checkbox" name="major" value="si" checked>
+                <hr>
+                <input type="submit" value="enviar">
+
+
+
+                <p>Menu
+                    <select name="menu" size="3" multiple>
+                        <option value="1">Uno</option>
+                        <option value="2">Dos</option>
+                        <option value="3" selected>Tres</option>
+                    </select>
+                </p>
+
+                <input type="checkbox" name="casilla">Casilla 1
+                <label type="checkbox" name="casilla">Casilla 1</label>
+                
+
+                <input type="checkbox" name="casilla" id="casilla1">
+                <label for="casilla1">Casilla1</label>
+            </form>
+     <br>
+     <br>
+            <form>
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <p>Nombre: <input type="text" name="nombre" size="30"></p>
+                    <p>Edad: <input type="number" name="edad"></p>
+                </fieldset>
+                <fieldset>
+                    <legend>Conocimientos informatica</legend>
+                    <p>Lenguajes
+                        <input type="checkbox" name="p1" value="1">C
+                        <input type="checkbox" name="p1" value="2">Java
+                        <input type="checkbox" name="p1" value="3">Android
+                    </p>
+                    <p>Web
+                        <input type="checkbox" name="p1" value="4">HTML
+                        <input type="checkbox" name="p1" value="5">CSS
+                        <input type="checkbox" name="p1" value="6">JAVASRIPT
+                    </p>
+
+                </fieldset>
+            </form>
+        </section>
+
+            </body>
+            </html>
