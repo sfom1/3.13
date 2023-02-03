@@ -12,20 +12,35 @@
 
         <h3>Empieza creando tu usuario
         </h3>
-        <p><b>Elige tu documento</b></p>
         <section>
             <form>
-
-               <p>Número de documento
-                <br>
-                <input type="number" name="num" id="num" placeholder="DNI o Tarjeta de residencia">
+            <p> 
+                <input type="texto" name="nom" id="nom" placeholder="Nombre(como sale en DNI)">
             </p>
+            
+            <p>
+                 <input type="texto" name="ape1" id="ape1" placeholder="1ºapellido(como sale en el DNI)">
+                <input type="texto" name="ape2" id="ape2" placeholder="2ºapellido(como sale en el DNI)">
+           </p>
 
-                <p>Fecha de nacimiento
-                    <br>
-                    <input type="date" name="fecha" id="fecha">
-                </p>
-           
+           <p>
+
+     
+            <select name="menu" >
+                <option value="1">DNI</option>
+                <option value="2">NIF</option>
+                <option value="3" selected>CERT.AEAT</option>
+            </select>
+            <input type="number" name="doc" id="doc" placeholder="Número de documento">
+            </p>
+            
+            <p>
+                <input type="telf" name="telf" id="telf" placeholder="Móvil">
+                <input type="text" name="email" id="email" placeholder="Email">
+            </p>
+            </select>
+        </p>
+
             </form>
 
 
